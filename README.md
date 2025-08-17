@@ -1,15 +1,19 @@
-# Flask + Docker App 🚀
+# Flask-Info-App-Docker 🚀
 
-An upgraded **Flask application** containerized with **Docker**.  
-Includes multiple routes (HTML + JSON API).
+A Dockerized Flask web app with HTML pages and a JSON API. Demonstrates Python web development and containerization with Docker.
 
 ## Features
-- Homepage (`/`)
-- About Page (`/about`)
-- API Endpoint (`/api/info`)
+- **Homepage (`/`)** – Welcome page  
+- **About (`/about`)** – Project info  
+- **API (`/api/info`)** – JSON endpoint  
+- Fully **Dockerized** for easy deployment
 
-## Run with Docker
-```bash
-docker build -t flask-info-app:1.0 .
-docker run -d --name flask-info -p 5000:5000 flask-info-app:1.0
-```
+## Tech
+Python 3.11 | Flask | Docker
+
+## How to Run
+1. Build: `docker build -t flask-info-app:1.0 .`  
+2. Run: `docker run -d --name flask-info -p 5000:5000 flask-info-app:1.0`  
+3. Open: `http://localhost:5000` (homepage)  
+   `/about` → About page  
+   `/api/info` → JSON API
